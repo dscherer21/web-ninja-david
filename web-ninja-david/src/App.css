@@ -1,3 +1,11 @@
+.shojumaru {
+  font-family: 'Shojumaru', cursive;
+}
+
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .App {
   text-align: center;
 }
