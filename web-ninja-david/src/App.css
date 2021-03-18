@@ -8,7 +8,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  color: #61dafb;
+  /*color: #61dafb;*/
+  color: red;
   font-family: 'shojumaru', sans-serif;
 }
 

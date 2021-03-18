@@ -3,9 +3,9 @@ import React from 'react';
 function LandingPage() {
   
   return (
-    <body>
-        <div>This is the body!</div>
-    </body>
+    <main>
+        <div>This is the LandingPage body!</div>
+    </main>
   );
 }
 
