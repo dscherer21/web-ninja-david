@@ -7,7 +7,9 @@ function ProjectsPage() {
   return (
     <main>
         <div>This is the ProjectsPage body!</div>
-        <ProjectsTemplate/>
+        {projects.map((project, i) => (
+          <ProjectsTemplate {...project}/>
+        ))}
     </main>
   );
 }
