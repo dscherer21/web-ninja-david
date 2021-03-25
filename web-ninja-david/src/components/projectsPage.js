@@ -7,8 +7,9 @@ function ProjectsPage() {
   return (
     <main>
         <div>This is the ProjectsPage body!</div>
-        {projects.map((project, i) => (
-          <ProjectsTemplate {...project}/>
+        {/*using the spread operator (...) to push all the project props into the projectsTemplate.*/}
+        {projects.map((project) => (
+          <ProjectsTemplate {...project} key={project._id}/>
         ))}
     </main>
   );
