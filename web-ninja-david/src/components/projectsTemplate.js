@@ -10,7 +10,7 @@ function ProjectsTemplate(props) {
         <div>Project Title: {title}</div>
         <div>Project Link: {link}</div>
         {/*Trying to get image links to work with require() in the src, but links not quite functional*/}
-        <div>Project Title: <img src={imageLink} alt={title}/></div>
+        <div>Project Image: <img src={imageLink} alt={title}/></div>
         <div>Project Description: {projectDescription}</div>
         <div>Project Technologies Used: {technologiesUsed}</div>
     </div>
