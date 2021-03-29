@@ -12,7 +12,6 @@ import LandingPage from './components/landingPage';
 import Footer from './components/footer';
 import ProjectsPage from './components/projectsPage';
 import ContactPage from './components/contactPage';
-import SocialMediaLinks from './components/socialMediaLinks';
 
 function App() {
   return (
@@ -30,7 +29,6 @@ function App() {
             <ContactPage/>
           </Route>
         </Switch>
-        <SocialMediaLinks/>
         <Footer/>
       </div>
     </Router>
