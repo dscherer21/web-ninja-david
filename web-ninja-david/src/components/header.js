@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import AudioPlayer from './audioPlayer';
 
 function Header() {
   
@@ -18,6 +19,7 @@ function Header() {
             <Link to='/contact'>Contact</Link>
           </li>
         </ul>
+        <AudioPlayer/>
     </header>
   );
 }
