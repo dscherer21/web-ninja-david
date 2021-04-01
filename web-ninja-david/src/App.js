@@ -12,6 +12,7 @@ import LandingPage from './components/landingPage';
 import Footer from './components/footer';
 import ProjectsPage from './components/projectsPage';
 import ContactPage from './components/contactPage';
+import AboutDavid from './components/aboutDavid';
 
 function App() {
   return (
@@ -22,9 +23,15 @@ function App() {
           <Route exact path='/'>
             <LandingPage/>
           </Route>
+
+          <Route exact path='/about'>
+            <AboutDavid/>
+          </Route>
+
           <Route path='/projects'>
             <ProjectsPage/>
           </Route>
+
           <Route path='/contact'>
             <ContactPage/>
           </Route>
