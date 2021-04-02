@@ -1,4 +1,6 @@
 import React from 'react';
+//Importing react-dotenv to load environment variables.
+import env from "react-dotenv";
 
 function EmailForm() {
 
@@ -17,6 +19,8 @@ function EmailForm() {
 
         <label for="message">Message:</label><br/>
         <input type="text" id="message" name="message" placeholder='Type your message here!' required/><br/>
+
+        <div>{env.CAPTCHA_KEY}</div>
 
         <button type='submit' value='submit'>Send</button>
     </form>
