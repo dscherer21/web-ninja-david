@@ -20,7 +20,7 @@ function EmailForm() {
         <label htmlFor="message">Message:</label><br/>
         <input type="text" id="message" name="message" placeholder='Type your message here!' required/><br/>
 
-        <div sitekey={env.CAPTCHA_KEY}>Hello!</div>
+        <div sitekey={env.REACT_APP_CAPTCHA_KEY}>Hello!</div>
 
         <button type='submit' value='submit'>Send</button>
     </form>

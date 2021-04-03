@@ -1,3 +1,1 @@
-window.env = {
-  "CAPTCHA_KEY": "12345"
-};
+window.env = {};
