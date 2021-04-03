@@ -11,16 +11,16 @@ function EmailForm() {
   
   return (
     <form onSubmit={onFormSubmit}>
-        <label for="name">First name:</label><br/>
+        <label htmlFor="name">First name:</label><br/>
         <input type="text" id="name" name="name" placeholder='John Doe' required/><br/>
 
-        <label for="email">Email:</label><br/>
+        <label htmlFor="email">Email:</label><br/>
         <input type="text" id="email" name="email" placeholder='example@email.com' required/><br/>
 
-        <label for="message">Message:</label><br/>
+        <label htmlFor="message">Message:</label><br/>
         <input type="text" id="message" name="message" placeholder='Type your message here!' required/><br/>
 
-        <div>{env.CAPTCHA_KEY}</div>
+        <div sitekey={env.CAPTCHA_KEY}>Hello!</div>
 
         <button type='submit' value='submit'>Send</button>
     </form>
