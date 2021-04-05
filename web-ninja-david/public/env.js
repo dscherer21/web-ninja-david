@@ -1,1 +1,4 @@
-window.env = {};
+window.env = {
+  "REACT_APP_CAPTCHA_SITE_KEY": "6Leal50aAAAAAPAF_AgxDPLFdAdBCtASrZIWkBwA",
+  "REACT_APP_CAPTCHA_SECRET_KEY": "6Leal50aAAAAALClkwwwSGOlH4Sdr-8ej3rUrHiL"
+};

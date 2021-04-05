@@ -1,12 +1,18 @@
 import React from 'react';
 //Importing react-dotenv to load environment variables.
 import env from "react-dotenv";
+//Importing react-google-recaptcha for Captcha to prevent spambots.
+import ReCAPTCHA from "react-google-recaptcha";
 
 function EmailForm() {
 
     function onFormSubmit(e) {
         e.preventDefault();
         alert("This component is still under construction");
+    };
+
+    function captchaSubmit(value) {
+      console.log("Captcha value:", value);
     };
   
   return (
@@ -20,7 +26,10 @@ function EmailForm() {
         <label htmlFor="message">Message:</label><br/>
         <input type="text" id="message" name="message" placeholder='Type your message here!' required/><br/>
 
-        <div sitekey={env.REACT_APP_CAPTCHA_KEY}>Hello!</div>
+        <ReCAPTCHA
+          sitekey={env.REACT_APP_CAPTCHA_SITE_KEY}
+          onChange={captchaSubmit}
+        />
 
         <button type='submit' value='submit'>Send</button>
     </form>
