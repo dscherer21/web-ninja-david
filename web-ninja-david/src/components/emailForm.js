@@ -9,11 +9,11 @@ import { SMTPClient } from 'emailjs';
 function EmailForm() {
   const[captchaValue, setCaptchaValue] = useState();
 
-  const client = new SMTPClient({
+  const client = () => new SMTPClient({
     //setting up email client that sends the message
-    user: 'user',
+    user: env.SENDING_EMAIL,
     password: env.SENDING_EMAIL_PASSWORD,
-    host: env.SENDING_EMAIL,
+    host: 'smtp.outlook.com',
     ssl: true,
   });
 
