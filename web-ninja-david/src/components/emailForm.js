@@ -3,9 +3,19 @@ import React, { useState } from 'react';
 import env from "react-dotenv";
 //Importing react-google-recaptcha for Captcha to prevent spambots.
 import ReCAPTCHA from "react-google-recaptcha";
+//Importing emailjs for client side email form sending.
+import { SMTPClient } from 'emailjs';
 
 function EmailForm() {
   const[captchaValue, setCaptchaValue] = useState();
+
+  const client = new SMTPClient({
+    //setting up email client that sends the message
+    user: 'user',
+    password: env.SENDING_EMAIL_PASSWORD,
+    host: env.SENDING_EMAIL,
+    ssl: true,
+  });
 
   function onFormSubmit(e) {
     //Prevents the page from refreshing after a form submission.
@@ -14,13 +24,27 @@ function EmailForm() {
       alert('Please check the Captcha box to ensure you are not a spambot. The Captcha times out after a certain amount of time, so you may need to recheck it.');
     } else {
       alert("This component is still under construction");
+      
+      client.send(
+        // send the message and get a callback with an error or details of the message that was sent
+        {
+		      text: 'i hope this works',
+		      from: 'you <username@your-email.com>',
+		      to: 'someone <someone@your-email.com>, another <another@your-email.com>',
+		      cc: 'else <else@your-email.com>',
+		      subject: 'testing emailjs',
+	      },
+	      (err, message) => {
+		      console.log(err || message);
+	      }
+      );
     };
     
   };
 
   function captchaSubmit(value) {
     setCaptchaValue(value);
-    console.log("Captcha value:", value);
+    console.log("Captcha value: ", value);
   };
   
   return (
