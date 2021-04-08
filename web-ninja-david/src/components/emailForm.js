@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 //Importing react-dotenv to load environment variables.
-import env from "react-dotenv";
+//import env from "react-dotenv";
 //Importing react-google-recaptcha for Captcha to prevent spambots.
 import ReCAPTCHA from "react-google-recaptcha";
 //Importing emailjs for client side email form sending.
 import { SMTPClient } from 'emailjs';
 
+const { REACT_APP_CAPTCHA_SITE_KEY, REACT_APP_SENDING_EMAIL, REACT_APP_SENDING_EMAIL_PASSWORD } = process.env;
+
 function EmailForm() {
+  
   const[captchaValue, setCaptchaValue] = useState();
 
   const client = () => new SMTPClient({
     //setting up email client that sends the message
-    user: env.SENDING_EMAIL,
-    password: env.SENDING_EMAIL_PASSWORD,
+    user: REACT_APP_SENDING_EMAIL,
+    password: REACT_APP_SENDING_EMAIL_PASSWORD,
     host: 'smtp.outlook.com',
     ssl: true,
   });
@@ -59,7 +62,7 @@ function EmailForm() {
         <input type="text" id="message" name="message" placeholder='Type your message here!' required/><br/>
 
         <ReCAPTCHA
-          sitekey={env.CAPTCHA_SITE_KEY}
+          sitekey={REACT_APP_CAPTCHA_SITE_KEY}
           onChange={captchaSubmit}
         />
 

@@ -35,13 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "react-dotenv": {
-    "whitelist": [
-      "CAPTCHA_SITE_KEY",
-      "CAPTCHA_SECRET_KEY",
-      "SENDING_EMAIL",
-      "SENDING_EMAIL_PASSWORD"
-    ]
   }
 }
