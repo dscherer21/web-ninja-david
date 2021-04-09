@@ -16,8 +16,10 @@ function EmailForm() {
     //setting up email client that sends the message
     user: REACT_APP_SENDING_EMAIL,
     password: REACT_APP_SENDING_EMAIL_PASSWORD,
-    host: 'smtp.outlook.com',
-    ssl: true,
+    host: 'smtp-mail.outlook.com',
+    tls: {
+      ciphers: 'SSLv3',
+    },
   });
 
   function onFormSubmit(e) {
@@ -28,7 +30,7 @@ function EmailForm() {
     } else {
       alert("This component is still under construction");
       
-      client.send(
+      () => client.send(
         // send the message and get a callback with an error or details of the message that was sent
         {
 		      from: {REACT_APP_SENDING_EMAIL},
