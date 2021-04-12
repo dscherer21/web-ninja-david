@@ -1,26 +1,14 @@
 import React, { useState, useEffect } from 'react';
 //Importing react-google-recaptcha for Captcha to prevent spambots.
 import ReCAPTCHA from "react-google-recaptcha";
-//Importing emailjs for client side email form sending.
-import { SMTPClient } from 'emailjs';
+//Importing emailjs for client-side email form sending.
+import emailjs from 'emailjs-com';
 
-const { REACT_APP_CAPTCHA_SITE_KEY, REACT_APP_SENDING_EMAIL, REACT_APP_SENDING_EMAIL_PASSWORD } = process.env;
+//Destructuring process.env
+const { REACT_APP_CAPTCHA_SITE_KEY, REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, REACT_APP_EMAILJS_USER_ID } = process.env;
 
 function EmailForm() {
   const[captchaValue, setCaptchaValue] = useState();
-  const[messageField, setMessageField] = useState();
-  const[nameField, setNameField] = useState();
-  const[emailField, setEmailField] = useState();
-
-  const client = () => new SMTPClient({
-    //setting up email client that sends the message
-    user: REACT_APP_SENDING_EMAIL,
-    password: REACT_APP_SENDING_EMAIL_PASSWORD,
-    host: 'smtp-mail.outlook.com',
-    tls: {
-      ciphers: 'SSLv3',
-    },
-  });
 
   function onFormSubmit(e) {
     //Prevents the page from refreshing after a form submission.
@@ -28,58 +16,40 @@ function EmailForm() {
     if(captchaValue == undefined || null){
       alert('Please check the Captcha box to ensure you are not a spambot. The Captcha times out after a certain amount of time, so you may need to recheck it.');
     } else {
-      alert("This component is still under construction");
+      emailjs.sendForm(REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, e.target, REACT_APP_EMAILJS_USER_ID)
+      .then((result) => {
+          console.log('Email Status: ', result.text);
+          alert('Thank you! Your message was sent.');
+      }, (error) => {
+          console.log('Email Status: ', error.text);
+          alert('Unfortunately, your message failed to send for some reason. If you would still like to contact David, you can do so at dscherer21@gmail.com.');
+      });
       
-      () => client.send(
-        // send the message and get a callback with an error or details of the message that was sent
-        {
-		      from: {REACT_APP_SENDING_EMAIL},
-		      to: 'dscherer21@gmail.com',
-		      subject: 'Form Submission from Web-Ninja-David',
-          text: "From: " + {nameField} + "\nName: " + {emailField} + "\nMessage: " +{messageField},
-	      },
-	      (err, message) => {
-		      console.log(err || message);
-	      }
-      );
     };
     
   };
 
   function captchaSubmit(value) {
     setCaptchaValue(value);
-    console.log("Captcha value: ", value);
   };
-
-  useEffect(() => {
-    console.log(messageField);
-  }, [messageField]);
-
-  useEffect(() => {
-    console.log(emailField);
-  }, [emailField]);
-
-  useEffect(() => {
-    console.log(nameField);
-  }, [nameField]);
   
   return (
     <form onSubmit={onFormSubmit}>
-        <label htmlFor="name">First name:</label><br/>
-        <input type="text" id="name" name="name" placeholder='John Doe' onChange={(e) => setNameField(e.target.value)} required/><br/>
+        <label htmlFor="from_name">Name:</label><br/>
+        <input type="text" id="name" name="from_name" placeholder='John Doe' required/><br/>
 
-        <label htmlFor="email">Email:</label><br/>
-        <input type="text" id="email" name="email" placeholder='example@email.com'  onChange={(e) => setEmailField(e.target.value)} required/><br/>
+        <label htmlFor="email_from">Email:</label><br/>
+        <input type="email" id="email" name="email_from" placeholder='example@email.com' required/><br/>
 
         <label htmlFor="message">Message:</label><br/>
-        <input type="text" id="message" name="message" placeholder='Type your message here!' onChange={(e) => setMessageField(e.target.value)} required/><br/>
+        <textarea type="text" id="message" name="message" placeholder='Type your message here!' required/><br/>
 
         <ReCAPTCHA
           sitekey={REACT_APP_CAPTCHA_SITE_KEY}
           onChange={captchaSubmit}
-        />
+        /><br/>
 
-        <button type='submit' value='submit'>Send</button>
+        <button type='submit' value='Send'>Send</button>
     </form>
   );
 }
