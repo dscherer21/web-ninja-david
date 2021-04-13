@@ -18,6 +18,7 @@ function EmailForm() {
     } else {
       emailjs.sendForm(REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, e.target, REACT_APP_EMAILJS_USER_ID)
       .then((result) => {
+          document.getElementById('form').reset();
           console.log('Email Status: ', result.text);
           alert('Thank you! Your message was sent.');
       }, (error) => {
@@ -34,7 +35,7 @@ function EmailForm() {
   };
   
   return (
-    <form onSubmit={onFormSubmit}>
+    <form onSubmit={onFormSubmit} id='form'>
         <label htmlFor="from_name">Name:</label><br/>
         <input type="text" id="name" name="from_name" placeholder='John Doe' required/><br/>
 
