@@ -37,15 +37,6 @@ const projects = [
 
     {
         _id: 5,
-        title:"City Seedlings Preschool",
-        link: "https://www.cityseedlingspreschool.com/",
-        imageLink: "./../media/cityseedlingspreschool.png",
-        projectDescription: "David helped a client to build their website for their business using Squarespace. David also consulted with the client and gave ideas on how to expand upon their site.",
-        technologiesUsed: "SquareSpace"
-    },
-
-    {
-        _id: 6,
         title:"ReactJS NYT Search",
         link: "https://nyt-mern-stack.herokuapp.com/",
         imageLink: "./../media/nytscreenshot.png",
@@ -54,7 +45,7 @@ const projects = [
     },
 
     {
-        _id: 7,
+        _id: 6,
         title:"Holy Covenant UMC",
         link: "https://www.holycovenantumc.org/",
         imageLink: "./../media/hcumcscreenshot.png",
@@ -63,7 +54,7 @@ const projects = [
     },
 
     {
-        _id: 8,
+        _id: 7,
         title:"Bootstrap Portfolio",
         link: "https://dscherer21.github.io/bootstrap-portfolio",
         imageLink: "./../media/bootstrapportfolioscreenshot.png",
@@ -72,7 +63,7 @@ const projects = [
     },
 
     {
-        _id: 9,
+        _id: 8,
         title:"DevTech Scraper",
         link: "https://devtechscraper.herokuapp.com/",
         imageLink: "./../media/devtechscreenshot.png",
@@ -81,7 +72,7 @@ const projects = [
     },
 
     {
-        _id: 10,
+        _id: 9,
         title:"The Matrix Hangman",
         link: "https://dscherer21.github.io/Hangman-Game/",
         imageLink: "./../media/matrixwallpaper.jpg",
@@ -90,7 +81,7 @@ const projects = [
     },
 
     {
-        _id: 11,
+        _id: 10,
         title:"Futurama RPG",
         link: "https://dscherer21.github.io/futurama-rpg-game/",
         imageLink: "./../media/futuramabackground.jpg",
@@ -99,7 +90,7 @@ const projects = [
     },
 
     {
-        _id: 12,
+        _id: 11,
         title:"Dexter Trivia",
         link: "https://dscherer21.github.io/dexter-trivia-game/",
         imageLink: "./../media/dexterbackground.jpg",
@@ -108,7 +99,7 @@ const projects = [
     },
 
     {
-        _id: 13,
+        _id: 12,
         title:"Super Hero GIF Widget",
         link: "https://dscherer21.github.io/super-hero-gif-search-widget/",
         imageLink: "./../media/comicbookwallpaper.jpg",
@@ -117,7 +108,7 @@ const projects = [
     },
 
     {
-        _id: 14,
+        _id: 13,
         title:"BamazonJS",
         link: "https://github.com/dscherer21/bamazon",
         imageLink: "./../media/customerdemo1.png",
@@ -126,7 +117,7 @@ const projects = [
     },
 
     {
-        _id: 15,
+        _id: 14,
         title:"Heroes Friend Finder",
         link: "https://heroesfriendfinder.herokuapp.com/",
         imageLink: "./../media/friendfinderscreenshot.png",
