@@ -5,9 +5,8 @@ function Footer() {
   
   return (
     <footer>
-        <div>This is the footer!</div>
         <SocialMediaLinks/>
-        <div>Copyright 2021</div>
+        <div>Copyright ©2021</div>
     </footer>
   );
 }

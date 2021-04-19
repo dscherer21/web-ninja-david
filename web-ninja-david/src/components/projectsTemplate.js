@@ -6,12 +6,12 @@ function ProjectsTemplate(props) {
   
   return (
     <div key={_id}>
-        This is the Projects Template!
         <div>Project Title: {title}</div>
         <div>Project Link: {link}</div>
         <div>Project Image: <img src={imageLink} alt={title}/></div>
         <div>Project Description: {projectDescription}</div>
         <div>Project Technologies Used: {technologiesUsed}</div>
+        <br/>
     </div>
   );
 }

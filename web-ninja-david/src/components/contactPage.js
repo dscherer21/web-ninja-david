@@ -6,7 +6,7 @@ function ContactPage() {
   return (
     <main>
         <h1>Contact</h1>
-        <p>Welcome to the Contact Page. If you would like to send a message to David, you can do so here.</p>
+        <p>Welcome to the Contact Page. If you would like to send a message to David, you may do so here, or feel free to use one of the social media links below to contact him. David is always open to listening to new project opportunities.</p>
         <EmailForm/>
 
     </main>
