@@ -1,13 +1,14 @@
 import React from 'react';
 import SocialMediaLinks from './socialMediaLinks';
+import Row from 'react-bootstrap/Row';
 
 function Footer() {
   
   return (
-    <footer>
+    <Row>
         <SocialMediaLinks/>
         <div>Copyright ©2021</div>
-    </footer>
+    </Row>
   );
 }
 

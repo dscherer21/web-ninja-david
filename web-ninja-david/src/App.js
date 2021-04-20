@@ -6,6 +6,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Header from './components/header';
 import LandingPage from './components/landingPage';
 import Footer from './components/footer';
@@ -16,7 +19,7 @@ import AboutDavid from './components/aboutDavid';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <Container className="App" fluid>
         <Header/>
         <Switch>
           <Route exact path='/'>
@@ -36,7 +39,7 @@ function App() {
           </Route>
         </Switch>
         <Footer/>
-      </div>
+      </Container>
     </Router>
   );
 }

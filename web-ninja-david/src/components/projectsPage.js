@@ -1,17 +1,18 @@
 import React from 'react';
 import projects from './projects';
 import ProjectsTemplate from './projectsTemplate';
+import Row from 'react-bootstrap/Row';
 
 function ProjectsPage() {
   
   return (
-    <main>
+    <Row>
         <h1>Welcome to the Projects Page!</h1>
         {/*using the spread operator (...) to push all the project props into the projectsTemplate.*/}
         {projects.map((project) => (
           <ProjectsTemplate {...project} key={project._id}/>
         ))}
-    </main>
+    </Row>
   );
 }
 

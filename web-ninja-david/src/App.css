@@ -7,10 +7,15 @@ body {
   background-image: url('./media/Bamboo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
+  background-attachment: fixed;
   /*color: #61dafb;*/
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Shojumaru', cursive;
   color: red;
-  font-family: 'shojumaru', sans-serif;
 }
 
 .shojumaru {
@@ -19,4 +24,19 @@ body {
 
 .ubuntu {
   font-family: 'Ubuntu', sans-serif;
+}
+
+.websiteLogo {
+  height: auto;
+  width: 50%;
+}
+
+.profileImage {
+  height: auto;
+  width: 70%;
+}
+
+.hexagon {
+  overflow: hidden;
+  clip-path: polygon(50% 0, 95% 30%, 95% 70%, 50% 95%, 0 70%, 0 30%);
 }
