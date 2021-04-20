@@ -12,7 +12,7 @@ function AboutDavid() {
         <Col>
           <h1>David Scherer-ODell</h1>
         </Col>
-        <Col className='hexagon'>
+        <Col>
           <Image src='./../media/davidsheadshot.jpg' alt="David's Headshot" className='profileImage' thumbnail/>
         </Col>
       </Row>
