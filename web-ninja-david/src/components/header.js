@@ -10,13 +10,14 @@ function Header() {
   
   return (
     <Container className='shojumaru'>
+      <hr/>
       <Row>
         <Col>
-          <Link to='/'>Home</Link>
+          <Link to='/' className='link'>Home</Link>
         </Col>
 
         <Col>
-          <Link to='/about'>About David</Link>
+          <Link to='/about' className='link'>About David</Link>
         </Col>
 
         <Col>
@@ -26,16 +27,18 @@ function Header() {
         </Col>
 
         <Col>
-          <Link to='/projects'>Projects</Link>
+          <Link to='/projects' className='link'>Projects</Link>
         </Col>
 
         <Col>
-          <Link to='/contact'>Contact</Link>
+          <Link to='/contact' className='link'>Contact</Link>
         </Col>
       </Row>
 
       <Row>
-        <AudioPlayer/>
+        <Col>
+          <AudioPlayer/>
+        </Col>
       </Row>
     </Container>
   );

@@ -1,14 +1,23 @@
 import React from 'react';
 import SocialMediaLinks from './socialMediaLinks';
+import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function Footer() {
   
   return (
-    <Row>
-        <SocialMediaLinks/>
-        <div>Copyright ©2021</div>
-    </Row>
+    <Container>
+      <Row>
+        <Col>
+          <SocialMediaLinks/>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col className='shojumaru'>Copyright ©2021</Col>
+      </Row>
+    </Container>
   );
 }
 

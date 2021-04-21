@@ -28,7 +28,12 @@ h1, h2, h3 {
 
 .websiteLogo {
   height: auto;
-  width: 50%;
+  width: 60%;
+}
+
+.link {
+  color: red;
+  font-size: 24px;
 }
 
 .profileImage {
