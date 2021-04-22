@@ -11,12 +11,14 @@ function Footer() {
       <Row>
         <Col>
           <SocialMediaLinks/>
+          <br/>
         </Col>
       </Row>
 
       <Row>
         <Col className='shojumaru'>Copyright ©2021</Col>
       </Row>
+      <br/>
     </Container>
   );
 }
