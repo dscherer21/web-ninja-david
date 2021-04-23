@@ -8,6 +8,7 @@ function Footer() {
   
   return (
     <Container>
+      <hr/>
       <Row>
         <Col>
           <SocialMediaLinks/>

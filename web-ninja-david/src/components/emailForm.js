@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
 //Importing emailjs for client-side email form sending.
 import emailjs from 'emailjs-com';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 //Destructuring process.env
 const { REACT_APP_CAPTCHA_SITE_KEY, REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, REACT_APP_EMAILJS_USER_ID } = process.env;
@@ -36,21 +39,68 @@ function EmailForm() {
   
   return (
     <form onSubmit={onFormSubmit} id='form'>
-        <label htmlFor="from_name">Name:</label><br/>
-        <input type="text" id="name" name="from_name" placeholder='John Doe' required/><br/>
+      <Container>
+        <Row>
+          <Col>
+            <label htmlFor="from_name">Name:</label>
+            <br/>
+            <input 
+              type="text" 
+              id="name" 
+              name="from_name" 
+              placeholder='John Doe' 
+              required
+            />
+            <br/>
+          </Col>
+        </Row>
 
-        <label htmlFor="email_from">Email:</label><br/>
-        <input type="email" id="email" name="email_from" placeholder='example@email.com' required/><br/>
+        <Row>
+          <Col>
+            <label htmlFor="email_from">Email:</label>
+            <br/>
+            <input 
+              type="email" 
+              id="email" 
+              name="email_from" 
+              placeholder='example@email.com' 
+              required
+            />
+            <br/>
+          </Col>
+        </Row>
 
-        <label htmlFor="message">Message:</label><br/>
-        <textarea type="text" id="message" name="message" placeholder='Type your message here!' required/><br/>
+        <Row>
+          <Col>
+            <label htmlFor="message">Message:</label>
+            <br/>
+            <textarea 
+              type="text" 
+              id="message" 
+              name="message" 
+              placeholder='Type your message here!' 
+              required
+            />
+          </Col>
+          <br/>
+        </Row>
 
-        <ReCAPTCHA
-          sitekey={REACT_APP_CAPTCHA_SITE_KEY}
-          onChange={captchaSubmit}
-        /><br/>
+        <Row>
+          <Col>
+            <ReCAPTCHA
+              sitekey={REACT_APP_CAPTCHA_SITE_KEY}
+              onChange={captchaSubmit}
+            />
+            <br/>
+          </Col>
+        </Row>
 
-        <button type='submit' value='Send'>Send</button>
+        <Row>
+          <Col>
+            <button type='submit' value='Send'>Send</button>
+          </Col>
+        </Row>
+      </Container>
     </form>
   );
 }
