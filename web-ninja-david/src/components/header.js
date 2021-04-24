@@ -40,6 +40,7 @@ function Header() {
           <AudioPlayer/>
         </Col>
       </Row>
+      <hr/>
     </Container>
   );
 }

@@ -6,6 +6,7 @@ import emailjs from 'emailjs-com';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button'
 
 //Destructuring process.env
 const { REACT_APP_CAPTCHA_SITE_KEY, REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, REACT_APP_EMAILJS_USER_ID } = process.env;
@@ -82,22 +83,28 @@ function EmailForm() {
               required
             />
           </Col>
-          <br/>
         </Row>
-
+        <br/>
         <Row>
           <Col>
             <ReCAPTCHA
               sitekey={REACT_APP_CAPTCHA_SITE_KEY}
               onChange={captchaSubmit}
+              style={{
+                textAlign: 'center',
+                display: 'inline-block'
+              }}
             />
-            <br/>
           </Col>
         </Row>
-
+        <br/>
         <Row>
           <Col>
-            <button type='submit' value='Send'>Send</button>
+            <Button 
+              type='submit' 
+              value='Send' 
+              variant="danger"
+            >Send</Button>
           </Col>
         </Row>
       </Container>

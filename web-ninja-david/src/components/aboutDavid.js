@@ -14,9 +14,16 @@ function AboutDavid() {
         </Col>
 
         <Col>
-          <Image src='./../media/davidsheadshot.jpg' alt="David's Headshot" className='profileImage' thumbnail/>
+          <Image 
+            src='./../media/davidsheadshot.jpg' 
+            alt="David's Headshot" 
+            className='profileImage' 
+            thumbnail
+          />
         </Col>
       </Row>
+      <br/>
+      
       <Row>
         <Col>
           <h2>Education and Work Experience</h2>
