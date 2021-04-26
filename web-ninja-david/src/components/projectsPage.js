@@ -16,6 +16,12 @@ function ProjectsPage() {
       </Row>
 
       <Row>
+        <Col className='whiteBackground'>
+          <p>Here is a list of some of David's deployed projects. Most of them are personal projects that David has built by himself. Just click on each name to view the details about that project and where you can demo it live.</p>
+        </Col>
+      </Row>
+
+      <Row>
         <Col>
           {/*using the spread operator (...) to push all the project props into the projectsTemplate.*/}
           {projects.map((project) => (

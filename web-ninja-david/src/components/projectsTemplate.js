@@ -11,12 +11,12 @@ function ProjectsTemplate(props) {
     const { title, link, imageLink, projectDescription, technologiesUsed, _id } = props;
   
   return (
-    <Container>
+    <Container >
       <Accordion>
         <Row>
           <Col>
             <Accordion.Toggle as={Button} variant="link" eventKey="0">
-              <h2>{title}</h2>
+              <h2 className='whiteBackground'>{title}</h2>
             </Accordion.Toggle>
           </Col>
         </Row>
@@ -24,7 +24,7 @@ function ProjectsTemplate(props) {
         <Row>
           <Col>
             <Accordion.Collapse eventKey="0">
-              <Container>
+              <Container className='whiteBackground'>
                 <Row>
                   <Col>
                     <div><h3>Description: </h3>{projectDescription}</div>

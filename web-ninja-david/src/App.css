@@ -19,6 +19,10 @@ h1, h2, h3 {
   color: red;
 }
 
+label {
+  text-align: left;
+}
+
 .shojumaru {
   font-family: 'Shojumaru', cursive;
 }
@@ -42,6 +46,13 @@ h1, h2, h3 {
   width: 60%;
   border: 5px solid  rgba(15,225,245,1);
   border-radius: 50%;
+}
+
+.whiteBackground {
+  background-color: rgba(255,255,255, 0.9);
+  border-radius: 25px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .hexagon {

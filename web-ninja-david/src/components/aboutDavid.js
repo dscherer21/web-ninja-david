@@ -10,7 +10,8 @@ function AboutDavid() {
     <Container>
       <Row>
         <Col>
-          <h1>David Scherer-ODell</h1>
+          <h1>David </h1>
+          <h1>Scherer-ODell</h1>
         </Col>
 
         <Col>
@@ -24,7 +25,7 @@ function AboutDavid() {
       </Row>
       <br/>
       
-      <Row>
+      <Row className='whiteBackground'>
         <Col>
           <h2>Education and Work Experience</h2>
           <br/>
@@ -39,7 +40,7 @@ function AboutDavid() {
         </Col>
         <br/>
       </Row>
-      <Row>
+      <Row className='whiteBackground'>
         <Col>
           <h2>David's Start</h2>
           <br/>
@@ -47,7 +48,7 @@ function AboutDavid() {
         </Col>
         <br/>
       </Row>
-      <Row>
+      <Row className='whiteBackground'>
         <Col>
           <h2>David's Hobbies and Interests</h2>
           <br/>

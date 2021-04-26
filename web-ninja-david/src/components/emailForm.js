@@ -77,9 +77,11 @@ function EmailForm() {
             <br/>
             <textarea 
               type="text" 
+              rows='10'
+              cols='40'
               id="message" 
               name="message" 
-              placeholder='Type your message here!' 
+              placeholder='Type your message here!'
               required
             />
           </Col>
@@ -103,8 +105,9 @@ function EmailForm() {
             <Button 
               type='submit' 
               value='Send' 
+              size='lg'
               variant="danger"
-            >Send</Button>
+            >Send Message</Button>
           </Col>
         </Row>
       </Container>
