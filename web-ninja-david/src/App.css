@@ -59,3 +59,9 @@ label {
   overflow: hidden;
   clip-path: polygon(50% 0, 95% 30%, 95% 70%, 50% 95%, 0 70%, 0 30%);
 }
+
+@media only screen and (max-width: 320px) {
+  audio {
+    width: 100%;
+  }
+}

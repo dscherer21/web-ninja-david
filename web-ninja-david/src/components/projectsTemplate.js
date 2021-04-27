@@ -13,6 +13,7 @@ function ProjectsTemplate(props) {
   return (
     <Container >
       <Accordion>
+        {/*Accordion will only display the project title. Then when clicked on, will expand to show the project details. */}
         <Row>
           <Col>
             <Accordion.Toggle as={Button} variant="link" eventKey="0">

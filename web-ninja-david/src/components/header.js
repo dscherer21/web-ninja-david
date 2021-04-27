@@ -12,31 +12,31 @@ function Header() {
     <Container className='shojumaru'>
       <hr/>
       <Row>
-        <Col>
+        <Col lg='2' md='6'>
           <Link to='/' className='link'>Home</Link>
         </Col>
 
-        <Col>
+        <Col lg='2' md='6'>
           <Link to='/about' className='link'>About David</Link>
         </Col>
 
-        <Col>
+        <Col lg='4' md='12'>
           <a href='https://docs.google.com/document/d/1Lzl-3lVk9ChzMVunPTL7ergAAoqLURrm2jWo64zKcWY/edit?usp=sharing' target='_blank' rel="noopener noreferrer">
             <Image src='./media/websitelogo.png' alt='Website Logo' className='websiteLogo' thumbnail/>
           </a>
         </Col>
 
-        <Col>
+        <Col lg='2' md='6'>
           <Link to='/projects' className='link'>Projects</Link>
         </Col>
 
-        <Col>
+        <Col lg='2' md='6'>
           <Link to='/contact' className='link'>Contact</Link>
         </Col>
       </Row>
 
       <Row>
-        <Col>
+        <Col xs='12'>
           <AudioPlayer/>
         </Col>
       </Row>
