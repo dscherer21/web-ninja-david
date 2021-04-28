@@ -27,7 +27,7 @@ function ProjectsTemplate(props) {
             <Accordion.Collapse eventKey="0">
               <Container className='whiteBackground'>
                 <Row>
-                  <Col>
+                  <Col lg='6' xs='12'>
                     <div><h3>Description: </h3>{projectDescription}</div>
                     <div><h3>Technologies Used: </h3>{technologiesUsed}</div>
                     <div>
@@ -36,7 +36,7 @@ function ProjectsTemplate(props) {
                     </div>
                   </Col>
 
-                  <Col>
+                  <Col lg='6' xs='12' className='projectImage'>
                     <Image 
                       src={imageLink} 
                       alt={title} 
