@@ -60,7 +60,7 @@ label {
   clip-path: polygon(50% 0, 95% 30%, 95% 70%, 50% 95%, 0 70%, 0 30%);
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
   audio {
     width: 100%;
   }
