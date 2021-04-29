@@ -43,7 +43,6 @@ function AboutDavid() {
       <Row className='whiteBackground'>
         <Col>
           <h2>David's Start</h2>
-          <br/>
           <p>David's interest in technology started when he was a teenager. He was continually surrounded by tech-savvy friends. He started off with building gaming PC's to play video games. Later, a friend of David's did a coding project for a local University's Spanish course, and David sat in and watched him do a lot of the coding. That is how David became interested in coding as a profession. In 2018, with the encouragement of his wife, David decided to begin his career in definite, by enrolling in the training course at Northwestern University. Since then, David has been pursuing a career as a web developer.</p>
         </Col>
         <br/>
@@ -51,7 +50,6 @@ function AboutDavid() {
       <Row className='whiteBackground'>
         <Col>
           <h2>David's Hobbies and Interests</h2>
-          <br/>
           <p>David's hobbies and interests are very wide and varied. David is a big gamer, he enjoys a lot of different types of music, movies and tv shows, and other things.</p>
           <br/>
           <h3>Games</h3>
