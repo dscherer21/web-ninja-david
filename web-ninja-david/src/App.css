@@ -77,9 +77,9 @@ a {
 }
 
 @media only screen and (max-width: 500px) {
-  textarea {
+  /*textarea {
     
-  }
+  }*/
   
   .websiteLogo {
     height: auto;
