@@ -2,27 +2,28 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image'
 
 function SocialMediaLinks() {
   
   return (
     <Container>
       <Row>
-        <Col lg='4' md='6'>
+        <Col sm='4' xs='4'>
           <a href='https://www.linkedin.com/in/david-scherer-odell/' target='_blank' rel="noopener noreferrer">
-            <img src='./../media/linkedinicon.png' alt="LinkedIn Icon"/>
+            <Image src='./../media/linkedinicon.png' alt="LinkedIn Icon" fluid/>
           </a>
         </Col>
 
-        <Col lg='4' md='6'>
+        <Col sm='4' xs='4'>
           <a href='https://www.facebook.com/david.scherer.77' target='_blank' rel="noopener noreferrer">
-            <img src='./../media/facebookicon.png' alt="Facebook Icon"/>
+            <Image src='./../media/facebookicon.png' alt="Facebook Icon" fluid/>
           </a>
         </Col>
         
-        <Col lg='4' md='12'>
+        <Col sm='4' xs='4'>
           <a href='https://github.com/dscherer21' target='_blank' rel="noopener noreferrer">
-            <img src='./../media/githubicon.png' alt="Github Icon"/>
+            <Image src='./../media/githubicon.png' alt="Github Icon" fluid/>
           </a>
         </Col>
       </Row>

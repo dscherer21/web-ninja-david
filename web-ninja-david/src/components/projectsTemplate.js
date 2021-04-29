@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button'
 
 function ProjectsTemplate(props) {
     //destructuring props so I don't have to use props every time I call a variable.
-    const { title, link, imageLink, projectDescription, technologiesUsed, _id } = props;
+    const { title, link, imageLink, projectDescription, technologiesUsed, codeRepo } = props;
   
   return (
     <Container >
@@ -28,11 +28,26 @@ function ProjectsTemplate(props) {
               <Container className='whiteBackground'>
                 <Row>
                   <Col lg='6' xs='12'>
-                    <div><h3>Description: </h3>{projectDescription}</div>
-                    <div><h3>Technologies Used: </h3>{technologiesUsed}</div>
+                    <div>
+                      <h3>Description: </h3>
+                      <p>{projectDescription}</p>
+                    </div>
+
+                    <div>
+                      <h3>Technologies Used: </h3>
+                      <p>{technologiesUsed}</p>
+                    </div>
+
                     <div>
                       <h3>Demo it live at: </h3>
                       <a href={link} target='_blank'>{link}</a>
+                    </div>
+
+                    <div>
+                      <h3>Check out the code at: </h3>
+                      {/*Ternary expression to display the code repo or a message if one doesn't exist.*/}
+                      {codeRepo ? <a href={codeRepo} target='_blank'>{codeRepo}</a> : 'Sorry! There is no code repository available for this project.'}
+                      
                     </div>
                   </Col>
 

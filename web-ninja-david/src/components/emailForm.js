@@ -52,10 +52,9 @@ function EmailForm() {
               placeholder='John Doe' 
               required
             />
-            <br/>
           </Col>
         </Row>
-
+        <br/>
         <Row>
           <Col>
             <label htmlFor="email_from">Email:</label>
@@ -70,7 +69,7 @@ function EmailForm() {
             <br/>
           </Col>
         </Row>
-
+        <br/>
         <Row>
           <Col>
             <label htmlFor="message">Message:</label>
@@ -78,7 +77,6 @@ function EmailForm() {
             <textarea 
               type="text" 
               rows='10'
-              cols='40'
               id="message" 
               name="message" 
               placeholder='Type your message here!'
