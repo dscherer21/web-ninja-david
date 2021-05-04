@@ -9,7 +9,7 @@ import Image from 'react-bootstrap/Image';
 function Header() {
   
   return (
-    <Container className='shojumaru'>
+    <Container className='robotoCondensed'>
       <hr/>
       <Row>
         <Col lg='2' md='6'>
