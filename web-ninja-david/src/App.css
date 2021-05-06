@@ -6,6 +6,7 @@ body {
   text-align: center;
   background-image: url('./media/Bamboo.jpg');
   background-size: cover;
+  height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
   /*color: #61dafb;*/
