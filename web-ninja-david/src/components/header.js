@@ -22,7 +22,8 @@ function Header() {
 
         <Col lg='4' md='12'>
           <a 
-            href='https://docs.google.com/document/d/1Lzl-3lVk9ChzMVunPTL7ergAAoqLURrm2jWo64zKcWY/edit?usp=sharing' target='_blank' 
+            href='https://docs.google.com/document/d/1Lzl-3lVk9ChzMVunPTL7ergAAoqLURrm2jWo64zKcWY/edit?usp=sharing' 
+            target='_blank' 
             rel="noopener noreferrer"
           >
             <Image 
