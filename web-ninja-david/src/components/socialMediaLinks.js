@@ -58,6 +58,7 @@ function SocialMediaLinks() {
             rel="noopener noreferrer"
           >
             <Image 
+              id='resumeLink'
               src='./../media/resumeIcon.png' 
               alt="Resume Link Icon" 
               fluid
