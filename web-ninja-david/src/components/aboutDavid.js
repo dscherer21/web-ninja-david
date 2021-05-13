@@ -8,7 +8,7 @@ function AboutDavid() {
   
   return (
     <Container>
-      <Row>
+      <Row className='whiteBackground'>
         <Col lg='6' md='12' id='paddingFix'>
           <h1>David </h1>
           <h1>Scherer-ODell</h1>
