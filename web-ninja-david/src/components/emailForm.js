@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 //Importing react-google-recaptcha for Captcha to prevent spambots.
 import ReCAPTCHA from "react-google-recaptcha";
 //Importing emailjs for client-side email form sending.
@@ -17,7 +17,7 @@ function EmailForm() {
   function onFormSubmit(e) {
     //Prevents the page from refreshing after a form submission.
     e.preventDefault();
-    if(captchaValue == undefined || null){
+    if(captchaValue === undefined || null){
       alert('Please check the Captcha box to ensure you are not a spambot. The Captcha times out after a certain amount of time, so you may need to recheck it.');
     } else {
       emailjs.sendForm(REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, e.target, REACT_APP_EMAILJS_USER_ID)

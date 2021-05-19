@@ -120,4 +120,9 @@ describe('projects array', () => {
     expect(projects[0]._id).toBe(1);
   });
 
+  test('project index 0 contains title and id', () =>{
+    expect(projects[0].title).toContain("Websmith David");
+    expect(projects[0]._id).toBe(1);
+  });
+
 });

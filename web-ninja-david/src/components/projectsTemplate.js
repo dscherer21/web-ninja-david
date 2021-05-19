@@ -40,13 +40,13 @@ function ProjectsTemplate(props) {
 
                     <div>
                       <h3>Demo it live at: </h3>
-                      <a href={link} target='_blank'>{link}</a>
+                      <a href={link} target='_blank' rel="noopener noreferrer">{link}</a>
                     </div>
 
                     <div>
                       <h3>Check out the code at: </h3>
                       {/*Ternary expression to display the code repo or a message if one doesn't exist.*/}
-                      {codeRepo ? <a href={codeRepo} target='_blank'>{codeRepo}</a> : 'Sorry! There is no code repository available for this project.'}
+                      {codeRepo ? <a href={codeRepo} target='_blank' rel="noopener noreferrer">{codeRepo}</a> : 'Sorry! There is no code repository available for this project.'}
                       
                     </div>
                   </Col>
