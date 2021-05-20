@@ -111,6 +111,13 @@ describe('EmailForm functionality', () => {
     expect(wrapper).not.toBeNull();
   });
 
+  test('registers formSubmit button click', () => {
+    const mockSubmit = jest.fn();
+    const wrapper = shallow(<EmailForm onFormSubmit={mockSubmit} />);
+    wrapper.find('#formSubmit').simulate('click');
+    expect(mockSubmit).toHaveBeenCalled();
+  });
+
 });
 
 describe('projects array', () => {
@@ -120,9 +127,9 @@ describe('projects array', () => {
     expect(projects[0]._id).toBe(1);
   });
 
-  test('project index 0 contains title and id', () =>{
-    expect(projects[0].title).toContain("Websmith David");
-    expect(projects[0]._id).toBe(1);
+  test('project index 13 contains title and id', () =>{
+    expect(projects[13].title).toContain("Heroes Friend Finder");
+    expect(projects[13]._id).toBe(14);
   });
 
 });

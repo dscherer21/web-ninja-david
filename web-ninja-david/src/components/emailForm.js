@@ -105,6 +105,7 @@ function EmailForm() {
               value='Send' 
               size='lg'
               variant="danger"
+              id='formSubmit'
             >Send Message</Button>
           </Col>
         </Row>
