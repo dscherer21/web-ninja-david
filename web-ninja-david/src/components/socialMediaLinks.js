@@ -53,9 +53,8 @@ function SocialMediaLinks() {
 
         <Col sm='3' xs='3'>
           <a 
-            href='https://docs.google.com/document/d/1Lzl-3lVk9ChzMVunPTL7ergAAoqLURrm2jWo64zKcWY/edit?usp=sharing' 
-            target='_blank' 
-            rel="noopener noreferrer"
+            href='https://docs.google.com/document/d/1Lzl-3lVk9ChzMVunPTL7ergAAoqLURrm2jWo64zKcWY/export?format=pdf'
+            download='David Scherer-ODell Resume'
           >
             <Image 
               id='resumeLink'
