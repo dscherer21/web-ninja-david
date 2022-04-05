@@ -22,7 +22,7 @@ function LandingPage() {
 
       <Row>
         <Col className='whiteBackground'>
-          <p>David Scherer-ODell is a web developer from Chicago, IL. He can build and deploy websites that can run across mutliple platforms and devices of various scale. David has worked in different industries and with different technologies, and loves innovating and solving people's problems. David is always on the lookout for new opportunities. If you would like to get in touch with him, feel free to contact him through one of the social media links down below or send a message through the contact page.</p>
+          <p>David Scherer-ODell is a web developer from San Diego, CA. He can build and deploy websites that can run across mutliple platforms and devices of various scale. David has worked in different industries and with different technologies, and loves innovating and solving people's problems. David is always on the lookout for new opportunities. If you would like to get in touch with him, feel free to contact him through one of the social media links down below or send a message through the contact page.</p>
           <br/>
           <p>You can view and download a copy of David's resume by clicking on the logo at the top of the screen or the resume icon at the bottom.</p>
         </Col>
