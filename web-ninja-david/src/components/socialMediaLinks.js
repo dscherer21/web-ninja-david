@@ -17,9 +17,10 @@ function SocialMediaLinks() {
           >
             <Image 
               src='./../media/linkedinicon.png' 
-              alt="LinkedIn Link Icon" 
+              alt="David's LinkedIn" 
               fluid
             />
+            <span style={{ display: 'none' }}>Opens In New Tab</span>
           </a>
         </Col>
 
@@ -31,9 +32,10 @@ function SocialMediaLinks() {
           >
             <Image 
               src='./../media/facebookicon.png' 
-              alt="Facebook Link Icon" 
+              alt="David's Facebook" 
               fluid
             />
+            <span style={{ display: 'none' }}>Opens In New Tab</span>
           </a>
         </Col>
         
@@ -45,9 +47,10 @@ function SocialMediaLinks() {
           >
             <Image 
               src='./../media/githubicon.png' 
-              alt="Github Link Icon" 
+              alt="David's Github" 
               fluid
             />
+            <span style={{ display: 'none' }}>Opens In New Tab</span>
           </a>
         </Col>
 
@@ -59,9 +62,10 @@ function SocialMediaLinks() {
             <Image 
               id='resumeLink'
               src='./../media/resumeIcon.png' 
-              alt="Resume Link Icon" 
+              alt="Download David's Resume" 
               fluid
             />
+            <span style={{ display: 'none' }}>Downloads A PDF</span>
           </a>
         </Col>
       </Row>
