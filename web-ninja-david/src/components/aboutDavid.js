@@ -37,6 +37,9 @@ function AboutDavid() {
           <br/>
           <h3>Tata Consultancy Services</h3>
           <p>After TDE, David worked at Tata Consultancy Services(TCS), where he was contracted out to another client. David was brought on to help the client with an internal software application. The application was being upgraded from React v15 to React v16. The tech stack for the application was: ReactJS, Java, Maven/Gradle, Flux, and MongoDb.</p>  
+          <br/>
+          <h3>AudioEye</h3>
+          <p>After TCS, David worked at AudioEye, where he helped clients make their website more accessible using WAI-ARIA standards. David daily tasks would inclue performing a WCAG(Web Content Accessibility Guidelines) scan to identify any issues in the client's site where accessibility improvements could be made and implemented those changes. David also assited his co-workers with other debugging issues. jQuery was the primary language used for all the implementation.</p> 
         </Col>
         <br/>
       </Row>

@@ -24,10 +24,13 @@ function Header() {
           <a 
             href='https://docs.google.com/document/d/1Lzl-3lVk9ChzMVunPTL7ergAAoqLURrm2jWo64zKcWY/export?format=pdf'
             download='David Scherer-ODell Resume'
+            role='button'
+            aria-describedby='downloadPDF'
+            aria-label='Davids Resume'
           >
             <Image 
               src='./websitelogo.png' 
-              alt='Website Logo' 
+              alt='Web Ninja David Homepage Logo' 
               className='websiteLogo' 
               thumbnail
             />

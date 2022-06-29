@@ -18,6 +18,8 @@ function App() {
   return (
     <Router>
       <Container className="App" fluid>
+        <span id='newTab' style={{ display: 'none' }}>Opens In a New Tab</span>
+        <span id='downloadPDF' style={{ display: 'none' }}>Downloads a PDF</span>
         <Header/>
         <Switch>
           <Route exact path='/'>
