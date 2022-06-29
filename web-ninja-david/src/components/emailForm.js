@@ -40,10 +40,11 @@ function EmailForm() {
   
   return (
     <form onSubmit={onFormSubmit} id='form'>
+      <div>"<span class="requiredField">*</span>" indicates a required field.</div>
       <Container>
         <Row>
           <Col>
-            <label htmlFor="from_name">Name:</label>
+            <label htmlFor="from_name"><span class="requiredField">*</span>Name:</label>
             <br/>
             <input 
               type="text" 
@@ -57,7 +58,7 @@ function EmailForm() {
         <br/>
         <Row>
           <Col>
-            <label htmlFor="email_from">Email:</label>
+            <label htmlFor="email_from"><span class="requiredField">*</span>Email:</label>
             <br/>
             <input 
               type="email" 
@@ -72,7 +73,7 @@ function EmailForm() {
         <br/>
         <Row>
           <Col>
-            <label htmlFor="message">Message:</label>
+            <label htmlFor="message"><span class="requiredField">*</span>Message:</label>
             <br/>
             <textarea 
               type="text" 
@@ -87,6 +88,7 @@ function EmailForm() {
         <br/>
         <Row>
           <Col>
+            <span class="requiredField">*</span>
             <ReCAPTCHA
               sitekey={REACT_APP_CAPTCHA_SITE_KEY}
               onChange={captchaSubmit}
